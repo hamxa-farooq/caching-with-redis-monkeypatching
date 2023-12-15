@@ -5,10 +5,12 @@ const keys = require('../config/keys');
 
 const User = mongoose.model('User');
 
+// save user data in session
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
+// get user data from session
 passport.deserializeUser((id, done) => {
   User.findById(id).then(user => {
     done(null, user);
