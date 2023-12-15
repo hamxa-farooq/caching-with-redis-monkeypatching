@@ -3,5 +3,6 @@ module.exports = {
   googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
   mongoURI: 'mongodb://localhost:27017/advancenode',
   redisUrl: 'redis://127.0.0.1:6379',
-  cookieKey: '123123123'
+  cookieKey: '123123123',
+  random: '12334'
 };
